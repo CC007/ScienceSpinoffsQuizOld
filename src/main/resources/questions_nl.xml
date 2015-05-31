@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questions>
+    <question id="1">
+        <text>Pluto is een...</text>
+        <answerA>Maan</answerA>
+        <answerB>Gasreus</answerB>
+        <answerC>Dwergplaneet</answerC>
+        <rightanswer>C</rightanswer>
+        <explanation>Pluto is een hemellichaam dat bestaat uit vaste stoffen zoals ijs en steen. Pluto draait om de zon, niet om een andere planeet. Het is een dwergplaneet, omdat er zich ook andere hemellichamen in zijn baan bevinden.</explanation>
+        <explanationimage>pluto-not-a-planet.png</explanationimage>
+    </question>
+    <question id="2">
+        <text>Wat is de hoofdstad van Nederland</text>
+        <answerA>Rotterdam</answerA>
+        <answerB>Amsterdam</answerB>
+        <answerC>Den Haag</answerC>
+        <rightanswer>B</rightanswer>
+        <explanation>Rotterdam is de grootste havenstad van het land, Den Haag is de hoofdstad van Zuid-Holland en het politieke centrum van het land, maar is niet de hoofdstad van het land.</explanation>
+        <explanationimage>amsterdam.jpg</explanationimage>
+    </question>
+    <question id="3">
+        <text>Hoeveel hoeken heeft een pentagon</text>
+        <answerA>5</answerA>
+        <answerB>6</answerB>
+        <answerC>7</answerC>
+        <rightanswer>A</rightanswer>
+        <explanation>Penta betekent 5. Het is een uit het grieks ontleende prefix. Pentagon betekent dus vijfhoek.</explanation>
+        <explanationimage>pentagon.jpg</explanationimage>
+    </question>
+</questions>
