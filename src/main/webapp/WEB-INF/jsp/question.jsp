@@ -15,7 +15,20 @@
         <script src="${cp}/resources/js/script.js"></script>
     </head>
     <body>
-        <h1>Science spin-offs: the technology we use</h1>
-        <div>${content}</div>
+        <div><h1>Science spin-offs: the technology we use</h1></div>
+        <div>${text}</div>
+        <form>
+            <div>
+                <input type="radio" name="answer" value="A" />${answerA}
+            </div>
+            <div>
+                <input type="radio" name="answer" value="B" />${answerB}
+            </div>
+            <div>
+                <input type="radio" name="answer" value="C" />${answerC}
+            </div>
+            <input type="submit" value="QuestionAnswered">
+        </form>
+            
     </body>
 </html>

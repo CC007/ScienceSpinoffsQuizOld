@@ -23,6 +23,7 @@
  */
 package com.github.cc007.sciencespinoffsquiz.web.controllers;
 
+import com.github.cc007.sciencespinoffsquiz.quiz.model.Question;
 import java.util.Observable;
 import java.util.Observer;
 import org.springframework.stereotype.Controller;
@@ -37,32 +38,34 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class RequestController extends Observable implements Observer {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String index(ModelMap map) {
-        map.put("content", "Hello Spring 4 Web MVC!");
-        return "index";
-    }
+	Question question = null;
 
-    @RequestMapping(value = "/statistics", method = RequestMethod.GET)
-    public String statistics(ModelMap map) {
-        map.put("content", "Some scoreboard");
-        return "statistics";
-    }
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public String index(ModelMap map) {
+		map.put("content", "Hello Spring 4 Web MVC!");
+		return "index";
+	}
 
-    @RequestMapping(value = "/explanation", method = RequestMethod.GET)
-    public String explanation(ModelMap map) {
-        map.put("content", "Here I need to explain things");
-        return "explanation";
-    }
+	@RequestMapping(value = "/statistics", method = RequestMethod.GET)
+	public String statistics(ModelMap map) {
+		map.put("content", "Some scoreboard");
+		return "statistics";
+	}
 
-    @RequestMapping(value = "/quiz", method = RequestMethod.GET)
-    public String question(ModelMap map) {
-        map.put("content", "Something something question");
-        return "question";
-    }
+	@RequestMapping(value = "/explanation", method = RequestMethod.GET)
+	public String explanation(ModelMap map) {
+		map.put("content", "Here I need to explain things");
+		return "explanation";
+	}
 
-    @Override
-    public void update(Observable o, Object arg) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+	@RequestMapping(value = "/quiz", method = RequestMethod.GET)
+	public String question(ModelMap map) {
+		map.put("content", "Something something question");
+		return "question";
+	}
+
+	@Override
+	public void update(Observable o, Object arg) {
+		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+	}
 }

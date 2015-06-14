@@ -44,7 +44,6 @@ public class ConsoleAdapter implements GameAdapter {
         this.s = new Scanner(System.in);
         this.lc = new LanguagesController(this.getLanguage());
         this.q = null;
-        this.language = null;
     }
 
     @Override
